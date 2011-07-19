@@ -33,7 +33,11 @@ that [here](http://gist.github.com/391247)). So I pulled out python
 and worked on a new script, which is at the bottom of this post, or
 you can get it [here](http://gist.github.com/395726). Once you
 download the file, you run it like this from your git repository:
+
+{% highlight bash %}
     git-create-review.py (some grep string) > diff.output
+{% endhighlight %}
+
 
 The script will take the argument as a string to search for in the
 commit comments. This is thanks to the *git log --grep=foo* command
