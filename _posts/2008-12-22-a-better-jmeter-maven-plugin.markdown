@@ -17,28 +17,28 @@ suggested we automate our tests on our project using JMeter and
 gave me his
 [webpage](http://jlorenzen.blogspot.com/2008/03/automated-performance-tests-using.html)
 about the trials and tribulations he went through to get it set
-up.Â  It linked to a
+up.  It linked to a
 [wiki page](http://wiki.apache.org/jakarta-jmeter/JMeterMavenPlugin),
 in which someone had created a JMeter plugin for Maven. Well
-awesome, it shouldn't be too hard to set up.Â  And it wasn't, I had
-the JMeter tests up and running in a short amount of time.Â  But one
+awesome, it shouldn't be too hard to set up.  And it wasn't, I had
+the JMeter tests up and running in a short amount of time.  But one
 of the problems was that I wanted to set it up in a more generic
 way so that we could define different parameters on each of the CI
-environments we ran.Â  For this task, I first tried using filtering
-in maven, which I got working.Â  But what you end up with is a JMX
+environments we ran.  For this task, I first tried using filtering
+in maven, which I got working.  But what you end up with is a JMX
 file that is basically unusable by default in JMeter. If you ever
 wanted to run it again standalone in JMeter, you'd have to modify
 the variables in the JMX file to work correctly. Vice versa, if you
 set up your test using JMeter, you have to remember to modify it so
 that the maven variables you need are in the places you need them.
 JMeter already has a system in it where you can define variables in
-the JMX files (and give them defaults, fancy la la!).Â  For example,
-say you want to define a variable for a host name.Â  Inside your
+the JMX files (and give them defaults, fancy la la!).  For example,
+say you want to define a variable for a host name.  Inside your
 JMeter JMX file, you can do something like this:
     ${__P(someVariableName, localhost)}
 
 Now, you have defined someVariableName to be a variable within your
-JMX file.Â  The second value, in this case localhost, is the default
+JMX file.  The second value, in this case localhost, is the default
 if no variable override has been given. The way to override these
 variables is with the -J option on the command, in this form:
     -JsomeVariableName=yourhost.com

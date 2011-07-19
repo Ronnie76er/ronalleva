@@ -13,13 +13,13 @@ categories:
 ---
 
 I had to recently send some modified files to someone so that they
-could take a look at what I was doing.Â  OH NOES!Â  How do I gather
+could take a look at what I was doing.  OH NOES!  How do I gather
 them all up at once?
     tar cvzf somefile.tar.gz `svn stat | awk '{print "test -f " $2 " && echo " $2}' | bash`
 
 **Word.** To break it down: The svn stat command is getting all the
 files that have changed obviously. The awk command its piped to is
-the real part that's doing the work.Â  The awk command prints
+the real part that's doing the work.  The awk command prints
     test -f file && echo file
 
 Pipe that through bash, and you have commands, which essentially
@@ -27,7 +27,7 @@ will echo the file if the file is a file. Simple? No? I mean, it
 will not print it out if it's a directory, so you don't have to
 worry about it adding entire directories. Surround that whole thing
 in backquotes (that's the one with the tilde (that's the one next
-to the '1' key ( I'm not telling you where the '1' key is)))Â  and
+to the '1' key ( I'm not telling you where the '1' key is)))  and
 give it as the argument to the tar command.
 
 
