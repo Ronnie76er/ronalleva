@@ -20,9 +20,11 @@ that?" Well, since no one reads this blog and no one actually asked
 me that, also misspelling my name in the process, let's just
 pretend that what I write is relevant. So you want to work with
 multiple svn branches (not to be confused with git branches). What
-you have to do is clone the svn repository in a different way, like
-this:
+you have to do is clone the svn repository in a different way, like this:
+
+{% highlight bash %}
     $ git svn clone https://somesvnrepo/svn/project -T trunk -b branches -t tags
+{% endhighlight %}
 
 This should work in most cases. The arguments to the -T, -b, and -t
 switches are the paths that the trunk, branches, and tags are in
@@ -36,8 +38,11 @@ finishes cloning, and you have access to the entire svn repository.
 Now, let's say you wanted to start working on trunk. Like before,
 you should checkout a branch, but this time it's going to use trunk
 as it's parent:
-    $ git checkout -b BranchOfTrunk trunk
 
+{% highlight bash %}
+    $ git checkout -b BranchOfTrunk trunk
+{% endhighlight %}
+    
 But Lo! You have the entire repo, so you can checkout that branch
 from whatever branch you have in subversion.
     $ git checkout -b BranchOfSubversionBranch subversion-branch
