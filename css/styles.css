@@ -24,5 +24,11 @@
 }
 
 body{
-	background-color: ;
+	background-color: #000033;
+	color: white;
+	
+}
+
+a {
+	color: orange;
 }
