@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div id="posts">
+<div id="postscontainer">
 {% for post in site.posts offset: 0 limit: 10 %}
 <header>
 <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
