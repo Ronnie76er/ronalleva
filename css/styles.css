@@ -24,9 +24,13 @@
 }
 
 body{
-	background-color: #000033;
-	color: white;
-	
+	background-color: #EEF2D3;
+	color: black;
+}
+
+blockquote{
+	background: #969985;
+	font: italic;
 }
 
 a {
