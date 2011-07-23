@@ -16,16 +16,20 @@ learn and to try it out, since I have been hearing great things
 about it.  The only issue is that my team (and like 1 million other
 teams universe wide) currently uses Subversion, and trying to get
 them to switch over would be like trying to punch a redwood down.
+
 But! Not all is lost.  You can use git with Subversion.  This can
 give you some of the benefits of using a DVCS without having to
 change everything you do.  I believe you can do this also with
 Mercurial...I went with git because I had read somewhere it had the
 best support to working with Subversion. AND RANDOM INTERNET BLOGS
-ARE ALWAYS RIGHT. First of all, I will say that I used
+ARE ALWAYS RIGHT.
+
+First of all, I will say that I used
 [this](http://utsl.gen.nz/talks/git-svn/intro.html) as a guide when
 I was working.  It's a great start to doing this stuff. I'll also
 assume you can find and install git on your own, since you're
 all-grow'd up now.
+
 ## Step 1: Creating a local repo
 
 Ok so let's get started.  The first step is to get the subversion
@@ -33,14 +37,19 @@ library.  That webpage I gave you gives you four different ways of
 doing it, but I decided to go with the fourth option, which is
 cloning the entire Subversion repository.  You can do that by
 doing:
+
+{% highlight bash %}
     git svn clone https://svnserver/project/trunk
+{% endhighlight %}
+
 
 Now, you should know that this could take a while.  You might as
 well go and eat dinner for the next three days while this
 completes.  Just kidding, this took me about an hour or so while I
 was working remotely over a VPN, so it's not so bad.  Our project
-has about 8000 revisions, and about 230 MBs of files. So you're
-probably wondering "But now if I have the whole history, isn't it
+has about 8000 revisions, and about 230 MBs of files.
+
+So you're probably wondering "But now if I have the whole history, isn't it
 going to take like...a bazillion bytes on my disk?"  To that I say
 "Non"...it uses compression, and my git repo ended up being about 1
 MB bigger than my subversion one.
@@ -48,21 +57,31 @@ MB bigger than my subversion one.
 
 From there, you can start working in git!  The first thing you'll
 probably want to do is create a branch:
+
+{% highlight bash %}
     git branch someNeatoBranch
+{% endhighlight %}
+
 
 To change to that branch:
+{% highlight bash %}
     git checkout someNeatoBranch
+{% endhighlight %}
 
 Now you are working on this particular branch. Note you can do this
 in one step by doing:
+{% highlight bash %}
     git checkout -b someNeatoBranch
+{% endhighlight %}
 
 which will create it and put you on it to work.
 ## Step 3: Commit locally
 
 Now you can edit the files to your heart's content.  And commit
 locally as often as you like, by doing
+{% highlight bash %}
     git commit -a
+{% endhighlight %}
 
 You can commit individual files by specifying them, but -a just
 grabs them all.
@@ -71,12 +90,16 @@ grabs them all.
 Once you're ready to commit back into the main Subversion repo,
 first you need to pull all the changes from there, to make sure
 there are no conflicts. You can do this by using this command:
+{% highlight bash %}
     git svn rebase
+{% endhighlight %}
 
 This will pull down the latest code and apply your code on top of
 it, merging if necessary.  Then to commit back to Subversion, you
 use:
+{% highlight bash %}
     git svn dcommit
+{% endhighlight %}
 
 And you will notice that your files are committed back to the repo
 without any more intervention from you!  But where are your
@@ -94,7 +117,9 @@ more powerful stuff with the branching aspect, and I even haven't
 tried it yet to share work with my coworkers before commiting to
 svn (I'm kinda like a git island at the moment).  But try it out,
 and then check out some of the resources below that helped me get
-started. Also, you might want to check how my co-worker
+started.
+
+Also, you might want to check how my co-worker
 [James](http://jlorenzen.blogspot.com/2008/08/me-lovin-git.html)one-upped
 me.  He was working on some highly experimental code that he wanted
 to share with a teammate, and created a true git repo in
