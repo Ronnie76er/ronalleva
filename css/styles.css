@@ -6,7 +6,6 @@
 .posts{
 	float: left;
 	width: 500px;
-	font-family: 'Hammersmith One', sans-serif;
 }
 
 #container{
@@ -26,6 +25,7 @@
 body{
 	background-color: #EEF2D3;
 	color: black;
+	font-family: 'Hammersmith One', sans-serif;
 }
 
 blockquote{
