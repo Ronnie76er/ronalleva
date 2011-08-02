@@ -14,7 +14,7 @@ categories:
 
 Our group is starting to use
 [Review Board](http://www.reviewboard.org/) more and more to
-conduct our code reviews.  But using it with git-svn, or with
+conduct our code reviews. But using it with git-svn, or with
 anything you've already checked into svn can be a real hassle.  You
 don't want to have uncommitted code hanging around in your computer
 for extended periods of time for a number of reasons, so this
@@ -30,7 +30,7 @@ This came about when one
 of my [co-workers](http://jlorenzen.blogspot.com/) posted a bash
 scripts someone had written that would
 [take a git diff and make it into a svn-like diff](http://mojodna.net/2009/02/24/my-work-git-workflow.html). 
-And that worked great.  My first attempt was to modify it to do
+And that worked great. My first attempt was to modify it to do
 multiple files at once, but it ended up making a diff for each
 revision for each file (if you need that functionality, you can get
 that [here](http://gist.github.com/391247)).
