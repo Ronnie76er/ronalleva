@@ -24,6 +24,8 @@
 
 .menuitems li{
 	text-decoration: none;
+	vertical-align: middle;
+	font-size: 8pt;
 }
 
 body{
