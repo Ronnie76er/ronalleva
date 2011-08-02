@@ -38,6 +38,7 @@ maven enforcer plugin, but it would have taken too much work and we
 would have needed to write a custom plugin for it to check the size
 of the EAR. So we decided to do it with Groovy. Here's the code:
 
+
 {% highlight xml %}
 <plugin>
   <groupid>org.codehaus.mojo.groovy</groupid>
