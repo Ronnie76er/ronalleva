@@ -21,7 +21,7 @@ site-homepage: ronalleva.com
    <link href="http://{{ page.site-homepage }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>http://{{page.site-homepage}}{{ post.id }}</id>
-   <content type="html"><a href="http://{{page.site-homepage}}{{ post.id }}">Read more...</a></content>
+   <content type="html"><a href="http://{{page.site-homepage}}{{ post.url }}">Read more...</a></content>
  </entry>
  {% endfor %}
  
