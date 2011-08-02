@@ -5,7 +5,7 @@ site-homepage: ronalleva.com
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Recursive</title>
+ <title>Ron Alleva Blog</title>
  <link href="http://{{page.site-homepage}}/feed/" rel="self"/>
  <link href="http://{{page.site-homepage}}/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
