@@ -123,7 +123,8 @@ Also, you might want to check how my co-worker
 [James](http://jlorenzen.blogspot.com/2008/08/me-lovin-git.html)one-upped
 me.  He was working on some highly experimental code that he wanted
 to share with a teammate, and created a true git repo in
-approximately 8 seconds, from existing code. ****
+approximately 8 seconds, from existing code.
+
 ## **Resources**
 
 -   [An introduction to git-svn for Subversion/SVK users and deserters](http://utsl.gen.nz/talks/git-svn/intro.html)

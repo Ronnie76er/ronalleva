@@ -22,8 +22,8 @@ problem was the latest version of the Maven war plugin
 for packaging in EARs. The documentation hasn't quite made it to
 the
 [website](http://maven.apache.org/plugins/maven-war-plugin/examples/skinny-wars.html)
-yet.  Instead of using <warSourceExludes\> to exclude the JARs that
-you do not want, you have to now use <packagingExcludes\>.  It's
+yet.  Instead of using `<warSourceExludes>` to exclude the JARs that
+you do not want, you have to now use `<packagingExcludes>`.  It's
 described in this bug
 [here](http://jira.codehaus.org/browse/MWAR-135?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel).
 
