@@ -1,3 +1,7 @@
+---
+blog-title: RON ALLEVA'S BLOG
+---
+
 <html>
     <head>  
         <link rel="stylesheet" media="screen" type="text/css" href="/css/styles.css">   
@@ -6,13 +10,33 @@
     </head>
     
     <body>
-
-        <div id="container">
-            <div id="blogtitle">
-                <a href="/"><img src="/images/R76er.png"></a>
+        <div>
+            <div class="blog-title-div">
+                <table style="width: 100%; height: 100%; padding: 0">
+                    <tr></tr>
+                    <tr>
+                        <td style="height: 100px">
+                            <a href="/">
+                                <div class="blog-title-string">
+                                    <div id="title1" class="background-title title">{{ page.blog-title }}</div>
+                                    <div id="title2" class="background-title title">{{ page.blog-title }}</div>
+                                    <div id="title3" class="background-title title">{{ page.blog-title }}</div>
+                                    <div id="title4" class="foreground-title title">{{ page.blog-title }}</div>
+                                </div>
+                            </a>
+                        </td>
+                        <td class="top-links">
+                            <a href="http://feeds.feedburner.com/RonAllevaBlog">Subscribe</a> | 
+                            <a href="/archive.html">Archive</a>
+                        </td>
+                    </tr>
+                </table>
             </div>
-
-            {{content}}
+    
+            <div id="container">
+                {{content}}
+                <hr/>                    
+            </div>
         </div>
     </body>
 </html>
