@@ -1,6 +1,6 @@
 ---
 author: admin
-date: '2010-10-07 22:14:54'
+date: '2010-08-04 18:33:23'
 layout: post
 slug: brand-spanking-new-blog
 title: Brand spanking new blog 
