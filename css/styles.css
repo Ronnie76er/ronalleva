@@ -9,7 +9,7 @@
 }
 
 .posttitle {
-	color: brown;
+	color: 09568d;
 }
 
 #container{
@@ -29,8 +29,8 @@
 }
 
 body{
-	background-color: #EEF2D3;
-	color: black;
+	background-color: white;
+	color: 09568d;
 	font-family: 'Hammersmith One', sans-serif;
 }
 
@@ -40,7 +40,7 @@ blockquote{
 }
 
 a {
-	color: brown;
+	color: 09568d;
 }
 
 code {
