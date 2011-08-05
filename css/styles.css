@@ -26,6 +26,10 @@
 	height: 100%;
 }
 
+.blog-subline-string{
+	
+}
+
 .title{
 	position: absolute;
 	margin: 0;
@@ -44,10 +48,14 @@
 
 .background-title{
 	opacity: .15;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+	filter: alpha(opacity=15);					
 }
 
 .foreground-title{
 	opacity: .5;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);					
 }
 
 .blog-title-string #title1{
