@@ -18,6 +18,10 @@
 	
 }
 
+.aboutmeheading{
+	text-decoration: underline;
+}
+
 .blog-title-string{
 	position: relative;
 	color: white;
@@ -28,10 +32,6 @@
 
 .blog-subline-string{
 	
-}
-
-.menuitems h4 {
-	text-align: center;
 }
 
 .title{
