@@ -30,6 +30,10 @@
 	
 }
 
+.menuitems h4 {
+	text-align: center;
+}
+
 .title{
 	position: absolute;
 	margin: 0;
