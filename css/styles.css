@@ -9,7 +9,7 @@
 }
 
 .posttitle {
-	color: 09568d;
+	color: #09568d;
 }
 
 .blog-title-div{
@@ -113,8 +113,7 @@
 }
 
 body{
-	background-color: white;
-	color: 09568d;
+	background-color: #E2E8EC;
 	font-family: 'Hammersmith One', sans-serif;
 }
 
