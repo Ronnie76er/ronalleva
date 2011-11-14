@@ -41,7 +41,7 @@ easy_install --always-unzip --install-dir=$HOME/lib/python --script-dir=$HOME/bi
 
 In your Webfaction control panel, setup a static web application, as shown below.  Remember the name of the application, as that folder is where you'll output your blog.
 
-![Alt If you can't see this image, you probably won't be able to use the webfaction control panel anywan and are probably already awesome at setting up an application](/images/bypost/using-git-webfaction-to-deploy-jekyll-website/webfaction-screenshot.png)
+<img src="/images/bypost/using-git-webfaction-to-deploy-jekyll-website/webfaction-screenshot.png" alt="If you cant see this image, you probably wont be able to use the webfaction control panel anyway and are probably already awesome at setting up an application" width="100%">
 
 ## 4. Set up git on Webfaction and your computer
 
