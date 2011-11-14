@@ -1,6 +1,6 @@
 ---
 author: admin
-date: '2011-09-05 21:48:32'
+date: 2011-09-05 21:48:32
 layout: post
 slug: using-git-webfaction-to-deploy-jekyll-website
 title: Setting up Jekyll blog on Webfaction using git
