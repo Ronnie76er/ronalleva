@@ -9,7 +9,7 @@
 }
 
 .posttitle {
-	color: #09568d;
+
 }
 
 .blog-title-div{
@@ -110,6 +110,10 @@
 
 .copyright{
 	text-align: left;
+}
+
+.article-text{
+	font-family: 'Fjord One', serif;'
 }
 
 body{

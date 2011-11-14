@@ -5,12 +5,13 @@ layout: default
 <header>
 <h2 class="posttitle">{{ page.title }}</h2>
 </header>
- 
-<article>
-      <p class="thin_line"></p>
+<p class="thin_line"></p>
 <p class="smalldate">Posted on {{ page.date | date_to_string }}</p>
-<p></p>
+
+<article class="article-text">
+
        {{ content }}
+
 </article>
 
 <hr>
