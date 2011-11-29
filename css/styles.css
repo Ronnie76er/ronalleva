@@ -135,4 +135,6 @@ code {
 	font: bold;
 }
 
-
+#dsq-content .dsq-moderator .dsq-comment-header {
+  background: #e9d0ab;
+}
