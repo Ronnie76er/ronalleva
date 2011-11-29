@@ -9,13 +9,14 @@
 }
 
 .posttitle {
+	font-family: 'Hammersmith One', sans-serif;
 
 }
 
 .blog-title-div{
 	background-color: 2799e9;
 	height: 200px;
-	
+	font-family: 'Hammersmith One', sans-serif;
 }
 
 .aboutmeheading{
@@ -118,7 +119,7 @@
 
 body{
 	background-color: #E2E8EC;
-	font-family: 'Hammersmith One', sans-serif;
+	font-family: 'Fjord One', serif;
 }
 
 blockquote{
