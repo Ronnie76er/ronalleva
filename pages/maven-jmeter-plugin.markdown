@@ -5,10 +5,6 @@ layout: post
 slug: jmeter-maven-plugin
 title: JMeter Maven Plugin
 ---
-UPDATE: The jmeter plugin code has moved to github!  Now you can fork and update to your heart’s content.
-
-Maven JMeter Plugin
-===================
 
 The Maven JMeter Plugin allows you to automate JMeter tests in Maven.
 
