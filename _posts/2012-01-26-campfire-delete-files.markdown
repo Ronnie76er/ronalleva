@@ -10,7 +10,9 @@ I wanted to take a stab at doing some Ruby, so I whipped up this little utility 
 
 You can get it on [my github.](https://github.com/Ronnie76er/Campfire-Remove-Files)
 
-To run, the command is as follows.  
+## Running the program
+
+To run, the command is as follows:
 {% highlight bash %}
 $ ./campfireremovefiles.rb -s server -t apitoken
 {% endhighlight %}
