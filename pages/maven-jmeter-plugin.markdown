@@ -6,6 +6,12 @@ slug: jmeter-maven-plugin
 title: JMeter Maven Plugin
 ---
 
+### UPDATE (21 Feb 2012)
+
+The JMeter Plugin has been majorly updated by [Mark Collin (Ardesco)](https://github.com/Ardesco).  He's put up a new website for the plugin at [jmeter.lazerycode.com](http://jmeter.lazerycode.com/).  Go check it out!
+
+<hr>
+
 The Maven JMeter Plugin allows you to automate JMeter tests in Maven.
 
 This fork use the JMeter module tree and the poms attached to the JMeter issue [#49753](https://issues.apache.org/bugzilla/show_bug.cgi?id=49753)
