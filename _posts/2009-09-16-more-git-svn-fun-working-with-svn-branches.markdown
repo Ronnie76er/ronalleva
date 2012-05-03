@@ -95,7 +95,7 @@ First, you can run a fake dcommit.
 {% endhighlight %}
 
 
-The **"--dry-run"** is key here, for two reasons. First, you'll be
+The `--dry-run` is key here, for two reasons. First, you'll be
 able to see what branch you are actually committing to in
 subversion. Not a bad idea, since you're working in a git repo that
 has all your subversion branches.
@@ -103,7 +103,7 @@ has all your subversion branches.
 Second, you'll see a diff tree
 with some of the commit hashes, one corresponding to each time you
 did a commit locally, in order. You will want to keep the values of
-the hash around, because next we are going to **"cherry-pick"**
+the hash around, because next we are going to `cherry-pick`
 them into trunk:
 
 {% highlight bash %}
