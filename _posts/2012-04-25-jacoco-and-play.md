@@ -21,7 +21,7 @@ After staring at the problem for a while, [@seantbrady](https://twitter.com/#!/s
 
 Play, however, has this set to false.  The simple solution, then, is to set this to false for jacoco also.
 
-<a id="shutup">a </a> 
+<a id="shutup"> </a> 
 
 ##  How to make it work
 

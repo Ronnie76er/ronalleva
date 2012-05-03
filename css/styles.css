@@ -124,6 +124,11 @@
 body{
 	background-color: #E2E8EC;
 	font-family: 'Fjord One', serif;
+	font-size: 10pt;
+}
+
+.smalldate {
+	font-size: 8pt;
 }
 
 blockquote{
