@@ -1,5 +1,6 @@
+div.code { display: inline-block;width: 100px; } 
 .highlight .hll { background-color: #ffffcc }
-.highlight  { background: #fafafa; }
+.highlight  { background: #fafafa; width:100%; overflow: auto; }
 .highlight .c { color: #aaaaaa; font-style: italic } /* Comment */
 .highlight .err { color: #F00000; background-color: #F0A0A0 } /* Error */
 .highlight .k { color: #0000aa } /* Keyword */
