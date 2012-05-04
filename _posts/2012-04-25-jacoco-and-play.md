@@ -7,7 +7,7 @@ title: Getting code coverage in the Play Framework using Jacoco
 ---
 *QUICKLINK: I don't care about your stupid life story, just [show me how to make it work](#shutup)*
 
-We've been using the [Play](http://www.playframework.org/) framework lately at [KonciergeMD](http://konciergemd.com) to build our application.  One thing that's always good to have on your application is good test coverage, and there's no shortage of tools to measure that.  OR IS THERE?
+We've been using the [Play](http://www.playframework.org/) framework lately at [KonciergeMD](http://konciergemd.com) to build our application.  One thing that's always good to have on your application is good test coverage, and there's no shortage of tools to measure that.  
 
 To get the reports on code coverage, we decided to give [JaCoCo](http://www.eclemma.org/jacoco/) a shot, and specifically try to use the [sbt-jacoco plugin](https://bitbucket.org/jmhofer/jacoco4sbt/wiki/Home) to do it.  
 
@@ -25,6 +25,8 @@ Play, however, has this set to false.  The simple solution, then, is to set this
 
 ##  How to make it work
 
+**UPDATE**: *We originally had the settings in a separate `build.sbt` file in the root directory to make this work.  A quick email from [Peter Hausel](https://twitter.com/#!/pk11) at Typesafe showed us how we can do it in the `Build.scala` file present in the `project` directory.
+
 Some of this is covered in the [sbt-jacoco wiki](https://bitbucket.org/jmhofer/jacoco4sbt/wiki/Home), but I'm going to put it all here for completeness.
 
 * Add the following to the `plugins.sbt`
@@ -37,18 +39,30 @@ libraryDependencies ++= Seq(
 addSbtPlugin("de.johoop" % "jacoco4sbt" % "1.2.2")
 {% endhighlight %}
 
-* We also had to add a `build.sbt` file to the root directory of our project.  It contained the following:
+* We also added the following to the `Build.scala` file in the `project` directory:
 
 {% highlight scala linenos %}
-import de.johoop.jacoco4sbt._
-import JacocoPlugin._
+import de.johoop.jacoco4sbt.JacocoPlugin._
 
-seq(jacoco.settings : _*)
 
-parallelExecution in jacoco.Config := false
+object ApplicationBuild extends Build {
 
+	val appName         = "webapp"
+	val appVersion      = "1.0-SNAPSHOT"
+
+	lazy val s = Defaults.defaultSettings ++ Seq(jacoco.settings:_*)
+
+	val appDependencies = Seq(
+		// Add your project dependencies here,
+	)
+	
+	val main = PlayProject(appName, appVersion, appDependencies, mainLang = JAVA, settings = s).settings(
+		// Add your own project settings here
+		parallelExecution in jacoco.Config := false
+	)
+}
 {% endhighlight %}
 
-The most important thing here is setting the `parallelExecution` to false in the jacoco Config.  
+You'll notice you have to add the JaCoCo settings to the default settings, and set the settings in the Play Project, adding the parallelExecution to false in there.  
 
 Now you can run `jacoco:cover` to produce your beautiful coverage report! You can see your report at `target/scala-2.9.1/jacoco/html`.
