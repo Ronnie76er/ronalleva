@@ -25,7 +25,7 @@ Play, however, has this set to false.  The simple solution, then, is to set this
 
 ##  How to make it work
 
-**UPDATE**: *We originally had the settings in a separate `build.sbt` file in the root directory to make this work.  A quick email from [Peter Hausel](https://twitter.com/#!/pk11) at Typesafe showed us how we can do it in the `Build.scala` file present in the `project` directory.
+**UPDATE**: *We originally had the settings in a separate `build.sbt` file in the root directory to make this work.  A quick email from [Peter Hausel](https://twitter.com/#!/pk11) at Typesafe showed us how we can do it in the `Build.scala` file present in the `project` directory.*
 
 Some of this is covered in the [sbt-jacoco wiki](https://bitbucket.org/jmhofer/jacoco4sbt/wiki/Home), but I'm going to put it all here for completeness.
 
@@ -39,7 +39,7 @@ libraryDependencies ++= Seq(
 addSbtPlugin("de.johoop" % "jacoco4sbt" % "1.2.2")
 {% endhighlight %}
 
-* We also added the following to the `Build.scala` file in the `project` directory:
+* We also added the following to the `Build.scala` file in the `project` directory
 
 {% highlight scala linenos %}
 import de.johoop.jacoco4sbt.JacocoPlugin._
@@ -63,6 +63,30 @@ object ApplicationBuild extends Build {
 }
 {% endhighlight %}
 
-You'll notice you have to add the JaCoCo settings to the default settings, and set the settings in the Play Project, adding the parallelExecution to false in there.  
+I'll highlight some of the more important parts of this file.
+
+First is this line:
+
+{% highlight scala %}
+lazy val s = Defaults.defaultSettings ++ Seq(jacoco.settings:_*)
+{% endhighlight %}
+
+This adds the jacoco settings to the variable `s`.
+
+Next is this line:
+
+{% highlight scala %}
+val main = PlayProject(appName, appVersion, appDependencies, mainLang = JAVA, settings = s).settings(
+{% endhighlight %}
+
+You'll notice `settings = s` is added to the PlayProject.  This adds the default and jacoco settings to the PlayProject.
+
+Finally this line:
+
+{% highlight scala %}
+parallelExecution in jacoco.Config := false
+{% endhighlight %}
+
+Will make sure that `parallelExecution` is off during test execution.
 
 Now you can run `jacoco:cover` to produce your beautiful coverage report! You can see your report at `target/scala-2.9.1/jacoco/html`.
