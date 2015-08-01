@@ -1,6 +1,6 @@
 ---
 author: admin
-date: 2011-11-12
+date: 2011-11-12 12:00:00
 layout: post
 slug: jmeter-maven-plugin
 title: JMeter Maven Plugin

@@ -14,7 +14,7 @@ If you go to the bottom of the page for
 [git-svn](http://www.kernel.org/pub/software/scm/git/docs/git-svn.html),
 under the "Basic Examples" section, you'll see in there a procedure
 to clone a git-svn repo that someone has painstakingly already
-cloned from svn.  That's great, because it will save you hours and
+cloned from svn. That's great, because it will save you hours and
 hours of mind numbing time that would normally take someone to
 clone an svn repo.
 
@@ -31,7 +31,7 @@ proves fruitless.
 
 The fix: modify the `.git/svn/.metadata` file so
 that the branches-maxRev and tags-maxRev equals the latest commit
-revision in svn.  So it should look like this after you are done:
+revision in svn. So it should look like this after you are done:
 
 {% highlight bash %}
 ; This file is used internally by git-svn
@@ -55,7 +55,7 @@ webpage, where it states:
 I must caveat this with the fact that I have no idea why this
 works. Git svn is still black magic to me, and making this work is
 akin to me throwing muskrat bones onto a flaming pyre, and drawing
-conclusions from the charred remains.  Maybe someone with more git
+conclusions from the charred remains. Maybe someone with more git
 knowledge could drop it off here?
 
 

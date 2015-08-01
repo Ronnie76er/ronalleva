@@ -8,9 +8,9 @@ title: Conky Hudson plugin
 wordpress_id: '125'
 ---
 
-I just finished updating the conky hudson plugin.  You can get more
+I just finished updating the conky hudson plugin. You can get more
 information on main page
-[here](http://www.ronniealleva.org/index.php/conky-hudson-status/). 
-Hopefully, you like it.  If not, then...what do you want from me?
+[here](http://www.ronniealleva.org/index.php/conky-hudson-status/).
+Hopefully, you like it. If not, then...what do you want from me?
 
 
