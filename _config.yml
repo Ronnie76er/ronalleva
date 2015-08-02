@@ -7,19 +7,25 @@ source:      .
 destination: ./_site
 plugins:     ./_plugins
 
+#General
+name: Ron Alleva's Blog
+description: ""
+
+
+paginate: 5
+
+# Social share and comments.
+disqus-id: ronnie76erblog
+twitter: Ronnie76er
+github: Ronnie76er
+google: +RonAlleva
+
 future:      true
 lsi:         false
 highlighter: pygments
 markdown:    kramdown
 encoding:    utf-8
 permalink:   date
-
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
 
 rdiscount:
   extensions: []
