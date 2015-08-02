@@ -1,62 +1,59 @@
----
-layout: main
----
+<!DOCTYPE html>
+<html lang="es">
 
-<div class="sidebar">
-    <div>
-        
-    </div>
+<head>
+    <meta charset="utf-8">
+    <title>
+        {% if page.title %} {{ page.title }}
+        {% else %} {{ site.name }} &mdash; {{ site.description }}
+        {% endif %}
+    </title>
 
-    <div class="menuitems">
-        <h3> Hi I'm Ron. I software things for <a href="http://www.accolade.com/">Accolade</a></h3>
-<script type="text/javascript">
-//<![CDATA[
-<!--
-var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
-"x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
-" r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!01)3t{yrx{=+;x+ll" +
-"=};acct(h)e}{f}roi(l=1-i;=>;0-i)-o{=+.xhcratAi(;)r}teru n.oussbrt0(o,)l};(f" +
-")\\\"02,1\\\"\\\\30\\\\01\\\\02\\\\\\\\4$'9:vt/-B`ghf?F\\\\\\\\\\\\\\\\7 03" +
-"\\\\\\\\25\\\\0V\\\\30\\\\03\\\\03\\\\\\\\21\\\\03\\\\00\\\\\\\\H)[401\\\\0" +
-"6\\\\01\\\\\\\\24\\\\07\\\\z(nz\\\\\\\\=9`3# +)2#00\\\\\\\\H!VYWT32\\\\0\\\\"+
-"\\\\\\\\\\\\_\\\\\\\\\\\\\\\\\\\\26\\\\0E\\\\\\\\\\\\\\\\\\\\MJMC@<~'fs0z0o" +
-" (hhtg24\\\\0t\\\\\\\\\\\\16\\\\0Y\\\\01\\\\05\\\\03\\\\\\\\24\\\\02\\\\00\\"+
-"\\\\\\30\\\\00\\\\01\\\\\\\\06\\\\03\\\\00\\\\\\\\\\\"\\\\f(;} ornture;}))+" +
-"+(y)^(iAtdeCoarchx.e(odrChamCro.fngriSt+=;o27=1y%+;y+2)10i<f({i+)i+l;i<0;i=" +
-"r(foh;gten.l=x,l\\\"\\\\\\\"\\\\o=i,r va){,y(x fontincfu)\\\"\")"            ;
-while(x=eval(x));
-//-->
-//]]>
-</script>
+    <meta name="robots" content="index,follow">
+    <meta name="revisit-after" content="1 days">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
 
+    {% if site.highlighter %} <link rel="stylesheet" href="{{ site.url }}/css/syntax.css" type='text/css'> {% endif %}
+    <link rel="stylesheet" href="{{ site.url }}/css/main.css" type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
 
-        <hr>
-		  <h3>Side Projects</h3>
-	     <ul>
-		     	<li><a href="/pages/conky-hudson.html" >Conky Hudson</a></li>
-  		     	<li><a href="/pages/dual-map.html" >Dual Map</a></li>
-		     	<li><a href="/pages/maven-jmeter-plugin.html" >Maven JMeter Plugin</a></li>		     	
-			<li><a href="https://github.com/Ronnie76er/sleepwords" >Sleepwords</a></li>
-	     </ul>
-	     <hr>        
-        <ul>
-            <li><a href="https://twitter.com/#!/Ronnie76er"><img src="/images/twitter-circle.png"></a></li>
-            <li><a href="https://www.linkedin.com/pub/ron-alleva/3/552/5ba"><img src="/images/linkedin-circle.png"></a> </li>
-	         <li><a href="https://www.facebook.com/Ronnie76er"><img src="/images/facebook-circle.png"></a> </li>
-            <li><a href="https://www.flickr.com/photos/ronnie76er/"><img src="/images/flickr-circle.png"></a> </li>
-        </ul>
-        
-    </div>
-</div>
-<div class="posts">
+</head>
 
-{{content}}
+<body>
+    <header id="top" class="main-header">
 
-<hr/>
-<div class="footer">
-    <span class="copyright">Copyright &copy; 2008-2012 Ron Alleva</span>
-    <span class="design-by">Designed by <a href="http://alisonmaehinch.com">AlisonMaeHinch.com</a></span>
-</div>
+        <div class="module title color-1">
+            <h1><a href="{{ site.url }}/">{{ site.name }}</a></h1>
+        </div>
 
-</div>
+        <div class="module description color-2">
+            {{ site.description }}
+        </div>
+
+        <nav class="module main-menu color-4">
+            <a href="{{ site.url }}/">Home</a>
+            <a href="{{ site.url }}/about/">About</a>
+            <a href="{{ site.url }}/contact/">Contact</a>
+        </nav>
+
+        <div class="module links color-3">
+            <a href="https://github.com/{{ site.github }}" title="Profile in Github" target="_blank">github</a>
+            <a href="https://twitter.com/{{ site.twitter }}" title="Profile in Twitter" target="_blank">twitter</a>
+            <a href="https://plus.google.com/{{ site.google }}" title="Profile in Google+" target="_blank">Google+</a>
+            <a href="{{ site.url }}/feed.xml" title="Suscribe to RSS" target="_blank">rss</a>
+        </div>
+
+    </header>
+
+    {{ content }}
+
+    {% include footer.html %}
+
+</body>
+</html>
