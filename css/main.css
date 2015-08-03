@@ -213,6 +213,24 @@ blockquote {
         text-decoration: underline;
     }
 
+/* ------------------------------------------------------------------------
+-  Profile Links (header). -
+-------------------------------------------------------------------------*/
+
+.profile-links  a {
+    color: #212121;
+    font-size: 4em;
+}
+
+.profile-links a:hover, .profile-links a:active {
+    color: #464646;
+    text-decoration: underline;
+}
+
+.module.profile-links {
+    padding: 0em;
+}
+
 
 /* ------------------------------------------------------------------------
 -  Tables -
