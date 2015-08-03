@@ -88,7 +88,7 @@ article p a {
     font-weight: 300;
     line-height: 1.7;
     text-align: center;
-    width: 35%;
+    width: 25%;
 }
 
     .main-header h1 {
@@ -107,6 +107,10 @@ article p a {
 .main-header .description { color: #e5e5e5; }
 .main-header .main-menu { padding: 0.1em; }
 
+.main-header .description a {
+    text-transform: none;
+}
+
 /* ------------------------------------------------------------------------
 -  The content. -
 -------------------------------------------------------------------------*/
@@ -114,7 +118,7 @@ article p a {
 .main-content {
     float: right;
     padding: 0;
-    width: 65%;
+    width: 75%;
 }
 
     .main-content a { color: #2c3e50; }
@@ -122,6 +126,13 @@ article p a {
 
 
 .category {
+    color: #ccc;
+    position: absolute;
+    right: 0.75em;
+    top: 1.75em;
+}
+
+.post-date {
     color: #ccc;
     position: absolute;
     right: 0.75em;

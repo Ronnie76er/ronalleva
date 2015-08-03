@@ -9,7 +9,7 @@ plugins:     ./_plugins
 
 #General
 name: Ron Alleva's Blog
-description: ""
+description: "I currently software all day for <a href='http://accolade.com'>Accolade</a>"
 
 
 paginate: 5
