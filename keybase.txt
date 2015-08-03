@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/ronnie76er
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ronalleva.com
+  * I am ronnie76er (https://keybase.io/ronnie76er) on keybase.
+  * I have a public key with fingerprint 6776 83C4 F092 10F5 087D  5C41 8223 6421 1AE3 8970
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "677683c4f09210f5087d5c41822364211ae38970",
+            "host": "keybase.io",
+            "key_id": "822364211ae38970",
+            "kid": "0101c10c100b141e9f3e107c49bfeecfc26e79c97efd2d438ef86edc624b1b8333de0a",
+            "uid": "21e98f4b5db80b31ff5fdc4087b7ad00",
+            "username": "ronnie76er"
+        },
+        "service": {
+            "hostname": "ronalleva.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1438583338,
+    "expire_in": 157680000,
+    "prev": "79e93b9bd43134e104f8d9b7748ddb056f72721c1a0e78b0d80d9c78a065cae1",
+    "seqno": 10,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.34
+Comment: https://keybase.io/crypto
+
+yMM4AnicbZJ7TBVHFMYviKSARIuFxgpNWWorj8Ls497dpVEQhIJGebS3pSkB9zEL
+G2D3svdyQRApakkxl6diDWlJLI2JoFDQtFCUh/hAXkICNkGRRqlNsCA1lvrEzpI2
+/aeTSSZzznd+M+fLueS5yuDudCBA9H/jbrnFaagvJs9g7nEPKsJ4VdyLhRdhWXDl
+kGQlA2oWTVZsWDhmomkTQwqUBFgCB5IRMLRoFCicIQjSRBE4zkGSYWmAhWCZqlWv
+QBies8JQWUUxdEmXRRT9H33WSgLgABdwgDbgcQqHrERCHNACxfIShIIkECZIswJL
+Q0kkRIpkoMSYoCiYCIrHeYYkSRECDuHyVnAEIjASxRtFngE8iUuSURIFCn2bpzkR
+6O/mWaGmcDkQqTVVUWRIm6CGFYdgKG6XBaiboPfyn4bLzoZ2LlRQc1C5RVNtqqBm
+o1SmzWaxhuultr0WXZsP+fR/KOm8rIjISlRhh5pVVhUsHEdKwSbrWBx1YtR/z4Rg
+sMAiazBd1hVGZDdAS38H2hGSZiFL8iyPWsdJCllDSYzI8jRNMaLIA6NJogmaQBZy
+ANIMD0QGiKxAMxwwGQUO4pjeV66iIjaC2rgMxLTKGQpny9MgVnyxL9XF4ORucF3t
+rE+Dwd1t3b8z8sKy9mVhkeOcsu33It+JmcTVj9eAgqqQexVTyfJY+2h7Z9mcJFaE
+zB9I3PTljW89rgrlGeaZQZfWuOjjM3veO9m7v7rPMXmqavzB+PYh14AwS7Iy96bH
+barOvnwtb2MkCBKDPm/xznT7Lna/X/TE4auLpW3sj41Lp52WF39IfkcbnV/yLq46
+n1DU9MQI5munfsuP6Of4hSflXZnHI0Ya2u4T5tgtH4TN7SvxkioP3j/nfLqt7o/h
+Pv7CdG51U8v7NwdSvEq7d+ysid3g9Wf6kV6fmVo2IPW12oTCzuWjMcfSfmqoNt7c
+dT066uOtA6cCj+2evRPUsTZ44VlPwpD51pWjSaphtsOtcHIx6oR3f0O/bfrgA0en
++45njSP5DWcG61u9Dj8fNWc92nP+UfNgVfON3QGOrkOf3gqkJ52nZ062+8SH+Zdd
+84l6nOu57bP410ve7hpe4le5WmbjHL9WXid9Z4dru9cNRPo2n01M7blDjvldVj1L
+zRs7QsectbP2fb0p+X2g6mkaVXDRQir1Uicx8iETmBGBFzu9u+WKlOhX8tfT8eCH
+Z9bg8UfK0tZX5gxsbkr65pfbXy9+kvvVw/UfBW+Gcxfas/3vbpjojqifbj30ClNf
+wU95eIvfR3DDbZu+aCF+bsS3YkmX6nbdS2kbeTUs3xpzGWn861541sw9f1mzcGKn
+h0tcJHjrb8pcq4I=
+=AKlN
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ronnie76er
+
+==================================================================
