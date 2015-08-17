@@ -4,7 +4,6 @@ date: 2012-04-25 21:29:00
 layout: post
 slug: jacoco-and-play
 title: Getting code coverage in the Play Framework using Jacoco
-categories: play sbt jacoco
 ---
 *QUICKLINK: I don't care about your stupid life story, just [show me how to make it work](#shutup)*
 
