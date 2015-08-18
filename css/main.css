@@ -139,6 +139,10 @@ article p a {
     top: 0.75em;
 }
 
+.post-date a {
+     color: #bbb;
+ }
+
 
 hr {
     border: 0;
