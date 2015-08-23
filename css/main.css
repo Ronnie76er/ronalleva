@@ -156,7 +156,7 @@ hr {
     color: #212121;
     margin: 0.5em;
     overflow: hidden;
-    padding: 1.5em;
+    padding: 0.5em;
     position: relative;
 }
 
@@ -170,6 +170,12 @@ hr {
         height: auto;
         max-width: 100%;
     }
+
+    .twitter {
+        padding: 0em;
+    }
+
+
 
     nav.module { padding-top: 1.5em; }
 
