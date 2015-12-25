@@ -9,7 +9,7 @@
 }
 
 .posttitle {
-	font-family: 'Hammersmith One', sans-serif;
+	font-family: 'Inconsolata', sans-serif;
 
 }
 
@@ -20,7 +20,7 @@
 .blog-title-div{
 	background-color: 2799e9;
 	height: 200px;
-	font-family: 'Hammersmith One', sans-serif;
+	font-family: 'Inconsolata', sans-serif;
 }
 
 .aboutmeheading{
@@ -119,12 +119,12 @@
 }
 
 .article-text{
-	font-family: 'Fjord One', serif;'
+	font-family: 'Inconsolata', serif;'
 }
 
 body{
 	background-color: #E2E8EC;
-	font-family: 'Fjord One', serif;
+	font-family: 'Inconsolata', serif;
 	font-size: 10pt;
 }
 

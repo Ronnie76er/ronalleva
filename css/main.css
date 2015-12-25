@@ -25,7 +25,7 @@
 
 html, body {
     background: #d1d1d1;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inconsolata', sans-serif;
     font-size: 24px;
     margin: 0;
 }
@@ -70,7 +70,6 @@ nav {
 article p a {
     border-bottom: .125em solid #ccc;
     display: inline;
-    padding: 0 0 .15em 0;
 }
 
     article p a:hover, article p a:active {
@@ -156,7 +155,7 @@ hr {
     color: #212121;
     margin: 0.5em;
     overflow: hidden;
-    padding: 0.5em;
+    padding: 0.8em;
     position: relative;
 }
 
@@ -187,10 +186,7 @@ hr {
 pre, code {
     background: #f7f7f7;
     font-size: 0.8em;
-    line-height: 1.5em;
-    padding: 0.4em;
 }
-
 
 blockquote {
     font-style: italic;
