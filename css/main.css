@@ -91,117 +91,112 @@ article p a {
     display: inline;
 }
 
-color: #f2f2f2 !important;
-background: #2c3e50;
-border: 0;
-}
-
 /* ------------------------------------------------------------------------
 -  The header (or the left side part of the page). -
 -------------------------------------------------------------------------*/
 .main-header {
-float: left;
-font-weight: 300;
-line-height: 1.7;
-text-align: center;
-width: 25%;
+    float: left;
+    font-weight: 300;
+    line-height: 1.7;
+    text-align: center;
+    width: 25%;
 }
 
 .main-header h1 {
-font-weight: 300;
-margin: 0;
+    font-weight: 300;
+    margin: 0;
 }
 
 .main-header a {
-color: #f5f5f5;
-text-transform: uppercase;
+    color: #f5f5f5;
+    text-transform: uppercase;
 }
 
 .main-header a:hover,
 .main-header a:focus {
-color: #e1e1e1;
+    color: #e1e1e1;
 }
 
 .main-header .description {
-color: #e5e5e5;
+    color: #e5e5e5;
 }
 
 .main-header .main-menu {
-padding: 0.1em;
+    padding: 0.1em;
 }
 
 .main-header .description a {
-text-transform: none;
+    text-transform: none;
 }
 
 /* ------------------------------------------------------------------------
 -  The content. -
 -------------------------------------------------------------------------*/
 .main-content {
-float: right;
-padding: 0;
-width: 75%;
+    float: right;
+    padding: 0;
+    width: 75%;
 }
 
 .main-content a {
-color: #2c3e50;
+    color: #2c3e50;
 }
 
 .main-content a:hover,
 .main-content a:focus {
-color: #2980b9;
+    color: #2980b9;
 }
 
 .category {
-color: #ccc;
-position: absolute;
-right: 0.75em;
-top: 1.75em;
+    color: #ccc;
+    position: absolute;
+    right: 0.75em;
+    top: 1.75em;
 }
 
 .post-date {
-color: #bbb;
-position: absolute;
-right: 0.75em;
-top: 0.75em;
+    color: #bbb;
+    position: absolute;
+    right: 0.75em;
+    top: 0.75em;
 }
 
 .post-date a {
-color: #bbb;
+    color: #bbb;
 }
 
 hr {
-border: 0;
-background: #ccc;
-height: 1px;
-margin: 50px 0;
+    border: 0;
+    background: #ccc;
+    height: 1px;
+    margin: 50px 0;
 }
 
 .module {
-color: #212121;
-margin: 0.5em;
-overflow: hidden;
-padding: 0.8em;
-position: relative;
+    color: #212121;
+    margin: 0.5em;
+    overflow: hidden;
+    padding: 0.8em;
+    position: relative;
 }
 
 .main-content .module {
-border-bottom: 2px solid #b1b1b1;
-font-size: 0.8em;
-margin-right: 1em;
+    border-bottom: 2px solid #b1b1b1;
+    font-size: 0.8em;
+    margin-right: 1em;
 }
 
 .module img {
-height: auto;
-max-width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 .twitter {
-padding: 0em;
+    padding: 0em;
 }
 
 nav.module {
-padding-top: 1.5em;
+    padding-top: 1.5em;
 }
 
 /* ------------------------------------------------------------------------
@@ -209,231 +204,231 @@ padding-top: 1.5em;
 -------------------------------------------------------------------------*/
 pre,
 code {
-background: #f7f7f7;
-font-size: 0.8em;
+    background: #f7f7f7;
+    font-size: 0.8em;
 }
 
 blockquote {
-font-style: italic;
-border-left: 5px solid #ccc;
-margin: 1.5em 10px;
-padding: 0.5em 5px;
-quotes: "\201C""\201D""\2018""\2019";
+    font-style: italic;
+    border-left: 5px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 5px;
+    quotes: "\201C""\201D""\2018""\2019";
 }
 
 blockquote:before {
-color: #ccc;
-content: open-quote;
-font-size: 4em;
-line-height: 0.1em;
-margin-right: 0.25em;
-vertical-align: -0.4em;
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
 }
 
 blockquote p {
-display: inline;
+    display: inline;
 }
 
 /* ------------------------------------------------------------------------
 -  Pagination. -
 -------------------------------------------------------------------------*/
 .pagination {
-text-align: center;
+    text-align: center;
 }
 
 .pagination .page_number {
-color: #888;
+    color: #888;
 }
 
 .pagination .nolink {
-color: #666;
+    color: #666;
 }
 
 /* ------------------------------------------------------------------------
 -  Links (header). -
 -------------------------------------------------------------------------*/
 .links a {
-color: #212121;
-text-transform: lowercase;
+    color: #212121;
+    text-transform: lowercase;
 }
 
 .links a:hover,
 .links a:active {
-color: #212121;
-text-decoration: underline;
+    color: #212121;
+    text-decoration: underline;
 }
 
 /* ------------------------------------------------------------------------
 -  Profile Links (header). -
 -------------------------------------------------------------------------*/
 .profile-links  a {
-color: #212121;
-font-size: 4em;
+    color: #212121;
+    font-size: 4em;
 }
 
 .profile-links a:hover,
 .profile-links a:active {
-color: #464646;
-text-decoration: underline;
+    color: #464646;
+    text-decoration: underline;
 }
 
 .module.profile-links {
-padding: 0em;
+    padding: 0em;
 }
 
 /* ------------------------------------------------------------------------
 -  Tables -
 -------------------------------------------------------------------------*/
 table {
-border: 1px solid #a1a1a1;
-border-collapse: collapse;
-font-size: 0.8em;
-width: 100%;
+    border: 1px solid #a1a1a1;
+    border-collapse: collapse;
+    font-size: 0.8em;
+    width: 100%;
 }
 
 table tr {
-border: none !important;
+    border: none !important;
 }
 
 table td,
 th {
-border: 1px solid #a1a1a1;
-padding: 3px;
+    border: 1px solid #a1a1a1;
+    padding: 3px;
 }
 
 table thead tr {
-background: #f2f2f2 !important;
+    background: #f2f2f2 !important;
 }
 
 table tr:nth-child(odd) {
-background: #f2f2f2;
+    background: #f2f2f2;
 }
 
 table tr:nth-child(even) {
-background: #e1e1e1;
+    background: #e1e1e1;
 }
 
 /* ------------------------------------------------------------------------
 -  Social share (end of the post). -
 -------------------------------------------------------------------------*/
 .social {
-padding: 0 !important;
-text-align: right;
+    padding: 0 !important;
+    text-align: right;
 }
 
 .social ul {
-list-style: none;
-list-style-position: inside;
-margin: 0 !important;
-padding: 0 !important;
+    list-style: none;
+    list-style-position: inside;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .social li {
-display: inline-block;
-margin: 0 !important;
-padding: 0.5em;
+    display: inline-block;
+    margin: 0 !important;
+    padding: 0.5em;
 }
 
 .social li a {
-color: #f5f5f5;
-display: block;
-margin: 0;
-padding: 0;
-width: 100%;
+    color: #f5f5f5;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .social li a:hover,
 .social li a:active {
-color: #f5f5f5;
-text-decoration: underline;
+    color: #f5f5f5;
+    text-decoration: underline;
 }
 
 .fb {
-background: #2c3e50;
+    background: #2c3e50;
 }
 
 .fb:hover {
-background: #34495e;
+    background: #34495e;
 }
 
 .tw {
-background: #2980b9;
+    background: #2980b9;
 }
 
 .tw:hover {
-background: #3498db;
+    background: #3498db;
 }
 
 .gp {
-background: #c0392b;
+    background: #c0392b;
 }
 
 .gp:hover {
-background: #e74c3c;
+    background: #e74c3c;
 }
 
 /* ------------------------------------------------------------------------
 -  Footer. -
 -------------------------------------------------------------------------*/
 .footer {
-clear: both;
-color: #888;
-font-size: 0.5em;
-margin: 0em;
-padding: 0.2em;
-text-align: center;
+    clear: both;
+    color: #888;
+    font-size: 0.5em;
+    margin: 0em;
+    padding: 0.2em;
+    text-align: center;
 }
 
 .footer a {
-color: #444;
-text-decoration: underline;
+    color: #444;
+    text-decoration: underline;
 }
 
 .footer p {
-margin-top: 2px;
+    margin-top: 2px;
 }
 
 /* ------------------------------------------------------------------------
 -  Make things responsive. -
 -------------------------------------------------------------------------*/
 @media (max-width:850px) {
-body {
-    font-size: large;
-}
+    body {
+        font-size: large;
+    }
 
-.main-header,
-.main-content {
-    padding: 0.75em;
-    width: 100%;
-}
+    .main-header,
+    .main-content {
+        padding: 0.75em;
+        width: 100%;
+    }
 
-.main-header .module {
-    margin-left: 0;
-}
+    .main-header .module {
+        margin-left: 0;
+    }
 
-.main-content .module {
-    margin-top: 0;
-}
+    .main-content .module {
+        margin-top: 0;
+    }
 
-nav {
-    text-align: center;
-}
+    nav {
+        text-align: center;
+    }
 
-nav br {
-    display: none;
-}
+    nav br {
+        display: none;
+    }
 
-nav a {
-    margin: 0 0.75em;
-}
+    nav a {
+        margin: 0 0.75em;
+    }
 
-.social {
-    text-align: center;
-}
+    .social {
+        text-align: center;
+    }
 
-.social li {
-    display: block;
-    width: 100%;
-}
+    .social li {
+        display: block;
+        width: 100%;
+    }
 
 }
