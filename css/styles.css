@@ -3,31 +3,29 @@
 	float: right;
 }
 
-.posts{
+.posts {
 	float: left;
 	width: 700px;
 }
 
 .posttitle {
 	font-family: 'Inconsolata', sans-serif;
-
 }
 
-.posttitlemainpage{
-
+.posttitlemainpage {
 }
 
-.blog-title-div{
+.blog-title-div {
 	background-color: 2799e9;
 	height: 200px;
 	font-family: 'Inconsolata', sans-serif;
 }
 
-.aboutmeheading{
+.aboutmeheading {
 	text-decoration: underline;
 }
 
-.blog-title-string{
+.blog-title-string {
 	position: relative;
 	color: white;
 	font-size: 5em;
@@ -35,94 +33,92 @@
 	height: 100%;
 }
 
-.blog-subline-string{
-	
+.blog-subline-string {
 }
 
-.title{
+.title {
 	position: absolute;
-	margin: 0;
-	/*padding: 0.5em;*/
+	margin: 0;	/*padding: 0.5em;*/
 }
 
-.top-links{
+.top-links {
 	color: white;
 	width: 150px;
 	vertical-align: bottom;
 }
 
-.blog-title-div a{
+.blog-title-div a {
 	color: white;
-	text-decoration:none;
+	text-decoration: none;
 }
 
-.background-title{
+.background-title {
 	opacity: .15;
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
-	filter: alpha(opacity=15);					
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+	filter: alpha(opacity=15);
 }
 
-.foreground-title{
+.foreground-title {
 	opacity: .5;
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-	filter: alpha(opacity=50);					
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
 }
 
-.blog-title-string #title1{
+.blog-title-string #title1 {
 	left: -5px;
 }
 
-.blog-title-string #title2{
+.blog-title-string #title2 {
 	left: 5px;
 }
 
-.blog-title-string #title3{
+.blog-title-string #title3 {
 	top: -7px;
 }
 
-.blog-title-string #title4{
+.blog-title-string #title4 {
 }
 
-
-#container{
+#container {
 	margin-left: auto;
 	margin-right: auto;
 	width: 1000px;
 	height: auto;
 }
 
-.menuitems ul{
+.menuitems ul {
 	list-style-type: none;
 }
 
-.menuitems img{
+.menuitems img {
 	border: 0;
 }
 
-.menuitems li{
+.menuitems li {
 	text-decoration: none;
 	vertical-align: middle;
 	font-size: 8pt;
 }
 
-.footer{
+.footer {
 	font-size: .75em;
 }
 
-.design-by{
+.design-by {
 	text-align: right;
 	float: right;
 }
 
-.copyright{
+.copyright {
 	text-align: left;
 }
 
-.article-text{
-	font-family: 'Inconsolata', serif;'
+.article-text {
+	font-family: 'Inconsolata', serif;
+	'
 }
 
-body{
+body {
 	background-color: #E2E8EC;
 	font-family: 'Inconsolata', serif;
 	font-size: 10pt;
@@ -132,7 +128,7 @@ body{
 	font-size: 8pt;
 }
 
-blockquote{
+blockquote {
 	background: #c2d9e9;
 	font: italic;
 }
@@ -146,5 +142,5 @@ code {
 }
 
 #dsq-content .dsq-moderator .dsq-comment-header {
-  background: #e9d0ab;
+	background: #e9d0ab;
 }
